@@ -1,0 +1,11 @@
+<p>profile works!</p>
+<button (click)="profile()">Show Bank Details</button>
+
+<!-- Bank Details Section -->
+<div *ngIf="bankDetailsVisible">
+    <p>Status: {{ bankStatus }}</p>
+    <p>Account Name: {{ accountName }}</p>
+    <p>Account Number: {{ accountNumber }}</p>
+    <p>Bank Name: {{ bankName }}</p>
+  </div>
+

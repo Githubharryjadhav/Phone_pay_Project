@@ -1,0 +1,51 @@
+/* General Paragraph Styling */
+p {
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark grey color */
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full-width tables */
+    border-collapse: collapse; /* Remove gaps between table borders */
+    margin-top: 10px; /* Space above the table */
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+/* Table Header Styling */
+th {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside table headers */
+    text-align: left; /* Left-align text */
+}
+
+/* Table Data Cell Styling */
+td {
+    padding: 10px; /* Padding inside table cells */
+    border: 1px solid #ddd; /* Light grey border */
+    text-align: left; /* Left-align text */
+}
+
+/* Hover Effect for Table Rows */
+tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 5px 10px; /* Padding inside the button */
+    border: none; /* Remove borders */
+    border-radius: 3px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size for the button */
+}
+
+/* Hover Effect for Button */
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}

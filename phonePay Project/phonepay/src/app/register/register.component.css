@@ -1,0 +1,54 @@
+/* Container Styling */
+div {
+    padding: 20px; /* Padding around the content */
+    background-color: #f7f7f7; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Limit the width of the container */
+    margin: 20px auto; /* Center the container with spacing above and below */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Input Fields */
+input[type="number"] {
+    padding: 10px; /* Padding inside input fields */
+    margin: 10px 0; /* Space above and below the input fields */
+    width: calc(100% - 22px); /* Full width minus padding and borders */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and borders in width */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Styling for Each Conditional Section */
+div[ngIf="showOtp==0"],
+div[ngIf="showOtp==1"],
+div[ngIf="showOtp==2"] {
+    margin-top: 20px; /* Space above each section */
+}
+
+/* Additional Styling for the Pin Section */
+div[ngIf="showOtp==2"] input {
+    margin-bottom: 10px; /* Space below each input in the PIN section */
+}
+
+div[ngIf="showOtp==2"] br {
+    margin-bottom: 10px; /* Space below the line break */
+}

@@ -1,0 +1,14 @@
+<div>
+    Enter Mobile Number: <input type="number" [(ngModel)]="number">
+    <button (click)="login()">Login</button>
+
+<span *ngIf="showOtp == 1">
+<button (click)="popOtp()">getOtp</button>
+</span>
+</div>
+
+<div *ngIf="showOtp == 1">
+    Enter OTP: <input type="number" [(ngModel)]="otp">
+    <button (click)="verifyOtp()">Verify OTP</button>
+</div>
+<button (click)="register()">Register</button>

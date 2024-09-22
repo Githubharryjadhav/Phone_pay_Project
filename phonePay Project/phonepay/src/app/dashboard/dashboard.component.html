@@ -1,0 +1,22 @@
+<p>dashboard works!</p>
+
+<button (click)="profile()">Profile</button> &nbsp;
+<button (click)="bankaccount()">Bank Accounts</button> &nbsp;
+<button (click)="sendmoney()">Send Money</button> &nbsp;
+<button (click)="history()">History</button> &nbsp;
+
+<div *ngIf="currentcomponent === 'profile'">
+    <app-profile></app-profile>
+</div>
+
+<div *ngIf="currentcomponent === 'bankaccount'">
+    <app-backaccounts></app-backaccounts>
+</div>
+
+<div *ngIf="currentcomponent === 'sendmoney'">
+    <app-sendmoney></app-sendmoney>
+</div>
+
+<div *ngIf="currentcomponent === 'history'">
+    <app-history></app-history>
+</div>

@@ -1,0 +1,59 @@
+/* General Container Styling */
+div {
+    padding: 20px; /* Padding around the form */
+    background-color: #f7f7f7; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Input Fields */
+input[type="number"] {
+    padding: 8px; /* Padding inside input fields */
+    margin: 10px 0; /* Space above and below the input fields */
+    width: calc(100% - 22px); /* Full width minus padding and borders */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and borders in width */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Span for OTP Button */
+span {
+    display: inline-block; /* Inline-block for the span */
+    margin-top: 10px; /* Space above the span */
+}
+
+/* Container for OTP Section */
+div[ngIf="showOtp == 1"] {
+    margin-top: 20px; /* Space above the OTP section */
+}
+
+/* Styling for the Register Button */
+button + button {
+    background-color: #2196F3; /* Blue background for the Register button */
+    margin-left: 10px; /* Space between the buttons */
+}
+
+button + button:hover {
+    background-color: #0b7dda; /* Slightly darker blue */
+}

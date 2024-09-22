@@ -1,0 +1,32 @@
+/* Style for the Profile Button */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Increase font size */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Style for the Bank Details Section */
+div[ngIf="bankDetailsVisible"] {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the details section */
+}
+
+/* Style for each paragraph within the Bank Details Section */
+div[ngIf="bankDetailsVisible"] p {
+    font-size: 18px; /* Larger text */
+    color: #333; /* Dark grey text */
+    margin: 8px 0; /* Space between lines */
+}

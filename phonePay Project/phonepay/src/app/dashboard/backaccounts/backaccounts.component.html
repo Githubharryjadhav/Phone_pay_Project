@@ -1,0 +1,58 @@
+<p>backaccounts works!</p>
+
+
+<p>Linked Bank Accounts</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Account Number</th>
+            <th>Balance</th>
+            <th>IFSC Code</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let account of this.linkBankAccounts">
+            <td>{{account.id}}</td>
+            <td>{{account.accountno}}</td>
+            <td>{{account.balance}}</td>
+            <td>{{account.ifscno}}</td>
+            <td>{{account.name}}</td>
+            <td>{{account.mobile}}</td>
+
+        </tr>
+    </tbody>
+</table>
+
+<p>Non LinkBank Accounts</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Accounts Number</th>
+            <th>Balance</th>
+            <th>IFSC Code</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Linking</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let account of this.bankAccounts">
+            <td>{{account.id}}</td>
+            <td>{{account.accountno}}</td>
+            <td>{{account.balance}}</td>
+            <td>{{account.ifscno}}</td>
+            <td>{{account.name}}</td>
+            <td>{{account.mobile}}</td>
+            <td><button (click)="linkAccount(account)">Link</button></td>
+
+        </tr>
+    </tbody>
+</table>

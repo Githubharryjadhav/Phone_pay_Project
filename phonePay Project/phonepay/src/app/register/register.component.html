@@ -1,0 +1,19 @@
+Enter Mobile Number:<input type="number" [(ngModel)]="number">
+
+<div *ngIf="showOtp==0">
+    <button (click)="register()">Register</button>
+</div>
+
+<div *ngIf="showOtp==1">
+    EnterOtp: <input type="number" [(ngModel)]="otp">
+    <button (click)="verify()">Verify Otp</button>
+</div>
+
+<div *ngIf="showOtp==2">
+    Pin: <input type="number" [(ngModel)]="pin"><br>
+    Confirm Pin: <input type="number" [(ngModel)]="pin2"><br>
+    <button (click)="set()">set</button>
+</div>
+
+
+
